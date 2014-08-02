@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 feature "View the home page" do
   scenario "user sees relvant information" do
   	visit root_path
