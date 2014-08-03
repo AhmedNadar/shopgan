@@ -7,12 +7,15 @@ feature "Sign in as a user" do
 
     expect(current_path).to eq new_user_registration_path
     
+    fill_in 'user_first_name',              with: user.first_name
+    fill_in 'user_last_name',               with: user.last_name
+    fill_in 'user_username',                with: user.username
     fill_in 'user_email',                   with: user.email
     fill_in 'user_password',                with: user.password
     fill_in 'user_password_confirmation',   with: user.password_confirmation
     click_button 'Sign up'
 
-		expect(current_path).to eq root_path
+    # expect(current_path).to eq root_path
 
     expect(User.count).to eq(1)
     expect(page).to have_content 'Welcome! You have signed up successfully.'
