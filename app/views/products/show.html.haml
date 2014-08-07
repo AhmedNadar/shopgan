@@ -1,1 +1,8 @@
-%p{"data-role"=> "description"} Product Show
+%p{"data-role"=> "description"} Product Details
+	
+%p= @product.title
+%p= @product.description
+%p= @product.price
+
+%br/
+%p= link_to "All Product", products_path
