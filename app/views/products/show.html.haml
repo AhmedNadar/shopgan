@@ -1,8 +1,21 @@
+%h1{id: @product.id} Showing details of product
 %p{"data-role"=> "description"} Product Details
-	
-%p= @product.title
-%p= @product.description
-%p= @product.price
+
+%div Name:
+%div= @product.title
+
+
+
+%ul.product_info
+	%div Name:
+	%li.title= @product.title 
+	%div Description:
+	%li.description= @product.description
+	%div Price:
+	%li.price= @product.price
+	%div Image:
+	%li.price= @product.image_url
+
 
 %br/
 %p= link_to "All Product", products_path

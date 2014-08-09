@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/gregbell/active_admin.git
-  revision: 7a2a31067e99e8e484942a3cddc44be1980b1ae6
+  revision: efe5a86968c81fd12244e6c4b6957d93d0a4b7ee
   specs:
     activeadmin (1.0.0.pre)
       arbre (~> 1.0)
@@ -101,7 +101,7 @@ GEM
       railties (>= 3.2, < 5.0)
     formtastic (2.3.0.rc3)
       actionpack (>= 3.0)
-    foundation-rails (5.3.1.0)
+    foundation-rails (5.3.3.0)
       railties (>= 3.1.0)
       sass (>= 3.2.0)
     haml (4.1.0.beta.1)

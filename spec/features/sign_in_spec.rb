@@ -16,7 +16,7 @@ feature "Sign in as a user" do
     fill_in 'user_password_confirmation',   with: user.password_confirmation
     click_button 'Sign up'
 
-    expect(current_path).to eq dashboard_path
+    expect(current_path).to eq products_path
 
     expect(User.count).to eq(1)
     expect(page).to have_content 'Welcome! You have signed up successfully.'
