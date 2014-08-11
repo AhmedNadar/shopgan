@@ -21,16 +21,6 @@ feature "Sign in as a user" do
     expect(User.count).to eq(1)
     expect(page).to have_content 'Welcome! You have signed up successfully.'
     expect(page).to have_link 'Sign out',       href: destroy_user_session_path
+    expect(page).to have_link 'Edit profile',   href: edit_user_registration_path
   end
 end
-
-  #   fill_in "Email", with: user.email
-  #   fill_in "Password", with: user.password
-  #   fill_in "Password confirmation", with: user.password_confirmation
-  #   click_button "Sign up"
-
-  #   expect(current_path).to eq playlists_path 
-  #   expect(page).to have_css '.alert',          text: 'Welcome! You have signed up successfully.'  
-  #   expect(page).to have_link 'Sign out',       href: destroy_user_session_path
-  #   expect(page).to have_link 'Edit profile',   href: edit_user_registration_path
-  # 
