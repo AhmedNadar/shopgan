@@ -24,21 +24,21 @@ class ProductsController <ApplicationController
 		end		
 	end
 
-	# def edit		
-	# end
+	def edit		
+	end
 
-	# def update
-	# 	if @product.update(product_params)
- #  			redirect_to @product, notice: 'product was successfully uopdated.'
- #  		else
- #  			render :edit
- #  		end
-	# end
+	def update
+		if @product.update(product_params)
+  			redirect_to @product, notice: 'product was successfully uopdated.'
+  		else
+  			render :edit
+  		end
+	end
 
-	# def destroy
-	# 	@product.destroy
-	# 	redirect_to products_path
-	# end
+	def destroy
+		@product.destroy
+		redirect_to products_path
+	end
 
 	private
 

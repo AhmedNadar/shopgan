@@ -16,6 +16,6 @@
         %td= pro.price
         %td
           = link_to "Show", product_path(pro)
-          = link_to "Delete", product_path(pro), :confirm => "Are you sure you want to delete this product?", :method => :delete
+          = link_to "Delete", product_path(pro), confirm: "Are you sure you want to delete this product?", method: :delete
 
 %p= link_to "Create a New Product", new_product_path, id: "new_prodcut"
